@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+
+  --color-sidebar: #0f1424;
+  --color-sidebar-hover: #182033;
+  --color-sidebar-active: #2e3f5c;
+  --color-sidebar-fg: #b4becc;
+  --color-sidebar-fg-active: #f3f6fa;
+  --color-canvas: #eef2f6;
+  --color-surface: #ffffff;
+  --color-ink: #152033;
+  --color-muted: #5c6b7a;
+  --color-faint: #8b98a8;
+  --color-line: #dfe6ee;
+  --color-accent: #0e8f86;
+  --color-accent-hover: #0c7c74;
+  --color-accent-fg: #f4fffd;
+  --color-accent-soft: #e5f5f3;
+  --color-nwp: #3d6ea8;
+  --color-ai: #0e8f86;
+  --color-ens: #6b7c93;
+  --color-blend: #152033;
+  --color-high: #1f7a4d;
+  --color-high-soft: #e5f4eb;
+  --color-med: #9a6b16;
+  --color-med-soft: #f8efd8;
+  --color-low: #b42318;
+  --color-low-soft: #fde8e6;
+
+  --radius-title: 1rem;
+  --radius-card: 0.75rem;
+  --radius-control: 0.5rem;
+  --radius-pill: 9999px;
+
+  --shadow-float:
+    0 1px 1px rgb(15 20 36 / 0.04), 0 10px 28px -8px rgb(15 20 36 / 0.16),
+    0 24px 48px -20px rgb(15 20 36 / 0.12);
+  --shadow-card: 0 0 0 1px rgb(15 20 36 / 0.06), 0 1px 2px rgb(15 20 36 / 0.04);
+  --shadow-drawer: 8px 0 32px rgb(15 20 36 / 0.28);
+
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+
+  --width-sidebar: 16.25rem;
+  --max-width-content: 56rem;
+
+  --ease-smooth-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --default-transition-duration: 150ms;
+  --default-transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(15 20 36 / 0.18) transparent;
+  }
+
+  .scrollbar-sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255 255 255 / 0.14) transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
