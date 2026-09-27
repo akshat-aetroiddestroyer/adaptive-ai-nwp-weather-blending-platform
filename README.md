@@ -173,7 +173,7 @@ npm test
 
 ## 👥 Team
 
-*[Adaptive blending]
+*[Cyborg]
 Om Tiwari - team leader
 Akshat Balothiya - tech lead(AI/ML Engineer / Specialist)
 Dev Khatre - forntend developer
