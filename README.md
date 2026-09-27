@@ -173,7 +173,13 @@ npm test
 
 ## 👥 Team
 
-*[Add team name, member names, and roles here]*
+*[Adaptive blending]
+Om Tiwari - team leader
+Akshat Balothiya - tech lead(AI/ML Engineer / Specialist)
+Dev Khatre - forntend developer
+Atharv Tiwari - backend developer
+Uravshi upadhyay - RnD(Researcher / Domain Expert)
+Anushka Nayak - UI/UX Designer & DevOps
 
 ---
 
